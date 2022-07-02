@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="200dp"
+    android:layout_height="270dp"
+    android:orientation="vertical"
+    android:background="#E5E5E5">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/img_item"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/dress"/>
+        <ImageView
+            android:id="@+id/img_fav"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/heartgreen"
+            android:background="@drawable/blackoval"
+            android:layout_alignBottom="@+id/img_item"
+            android:padding="10dp"
+            android:layout_alignEnd="@+id/img_item"
+            android:backgroundTint="@color/white"/>
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lady Pant"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/tv_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="359$"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"/>
+
+</LinearLayout>

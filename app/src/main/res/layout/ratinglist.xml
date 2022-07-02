@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:expandableTextView="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:text="Daniyal Danish"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal">
+
+        <com.iarcuschin.simpleratingbar.SimpleRatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:srb_borderColor="@color/gray"
+            app:srb_fillColor="@color/orange"
+            app:srb_numberOfStars="5"
+            app:srb_rating="3"
+            app:srb_starSize="25dp"
+            app:srb_stepSize="0.5" />
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:gravity="end"
+            android:text="21March 2021"
+            android:textColor="#605A65"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+
+
+    <com.ms.square.android.expandabletextview.ExpandableTextView
+        android:id="@+id/expand_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        expandableTextView:animDuration="100"
+        expandableTextView:maxCollapsedLines="5">
+
+        <!-- simple text view -->
+        <TextView
+            android:id="@id/expandable_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="#666666"
+            android:textSize="16sp" />
+
+
+        <!-- expandable ImageButton -->
+        <ImageButton
+            android:id="@id/expand_collapse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|bottom"
+            android:layout_margin="10dp"
+            android:background="@android:color/transparent" />
+
+    </com.ms.square.android.expandabletextview.ExpandableTextView>
+
+
+    <TextView
+        android:id="@+id/tv_review"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:maxLines="3"
+        android:text="Review websites,such as TripAdvisor and Yelp,allow users to post online reviews for various businesses,products and services,and have been recently shown to have a significant influence on consumer shopping behaviour.An online review typically consists of free-form text and a "
+        android:textColor="#605A65"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_showmore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="ShowMore"
+        android:layout_marginRight="10dp"
+        android:maxLines="3"
+        android:textColor="#605A65"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/img_thumb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_margin="10dp"
+        android:src="@drawable/thumb" />
+
+
+</LinearLayout>

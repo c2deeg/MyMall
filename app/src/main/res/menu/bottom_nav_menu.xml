@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/mHome"
+        android:icon="@drawable/homebottomnav"
+        android:title="Home" />
+    <item
+        android:id="@+id/mLocation"
+        android:icon="@drawable/locbottomnav"
+        android:title="Search" />
+    <item
+        android:id="@+id/mplaceholder"
+        android:title="" />
+    <item
+        android:id="@+id/mcart"
+        android:icon="@drawable/shoppingcart"
+        android:title="Profile" />
+    <item
+        android:id="@+id/mProfile"
+        android:icon="@drawable/profile"
+        android:title="Setting" />
+</menu>

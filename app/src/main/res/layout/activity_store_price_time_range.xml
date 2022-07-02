@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".Activities.StorePriceTimeRangeActivity.StorePriceTimeRangeActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:background="@color/userbuttoncolor">
+
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/backarrow2" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:src="@drawable/logoimg" />
+
+    </LinearLayout>
+
+
+
+
+
+
+
+    <EditText
+        android:id="@+id/et_storename"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/roundcorner"
+        android:drawablePadding="20dp"
+        android:hint="Store Name"
+        android:inputType="textEmailAddress"
+        android:padding="15dp"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textColorHint="@color/silver"
+        android:textSize="14sp" />
+
+
+
+    <EditText
+        android:id="@+id/et_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/roundcorner"
+        android:drawablePadding="20dp"
+        android:hint="Store Address"
+        android:inputType="textEmailAddress"
+        android:padding="15dp"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textColorHint="@color/silver"
+        android:textSize="14sp" />
+
+
+    <EditText
+        android:id="@+id/et_contact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/roundcorner"
+        android:drawablePadding="20dp"
+        android:hint="Contact Number"
+        android:inputType="textEmailAddress"
+        android:padding="15dp"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textColorHint="@color/silver"
+        android:textSize="14sp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Store Timming"
+        android:textColor="@color/shopownerbuttoncolor"
+        android:fontFamily="@font/sfproheavy"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="20dp"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:text="From:"
+                android:textColor="@color/shopownerbuttoncolor"
+                android:fontFamily="@font/sfproheavy"/>
+
+
+            <TextView
+                android:id="@+id/tv_timefrom"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.25"
+                android:hint="12.20AM"
+                android:textColorHint="@color/silver"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:background="@drawable/roundcorner"
+                android:padding="15dp"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="0.5">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.05"
+                android:text="To:"
+                android:textColor="@color/shopownerbuttoncolor"
+                android:fontFamily="@font/sfproheavy"/>
+
+
+            <TextView
+                android:id="@+id/tv_timeto"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.25"
+                android:hint="10.00PM"
+                android:textColorHint="@color/silver"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:background="@drawable/roundcorner"
+                android:padding="15dp"/>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Price Range"
+        android:textColor="@color/shopownerbuttoncolor"
+        android:fontFamily="@font/sfproheavy"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:text="From:"
+                android:textColor="@color/shopownerbuttoncolor"
+                android:fontFamily="@font/sfproheavy"/>
+
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.25"
+                android:hint="20$"
+                android:textColorHint="@color/silver"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:background="@drawable/roundcorner"
+                android:padding="15dp"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="0.5">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.05"
+                android:text="To:"
+                android:textColor="@color/shopownerbuttoncolor"
+                android:fontFamily="@font/sfproheavy"/>
+
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.25"
+                android:hint="600$"
+                android:textColorHint="@color/silver"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:background="@drawable/roundcorner"
+                android:padding="15dp"/>
+
+
+        </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>
+
+
+
+    <EditText
+        android:id="@+id/et_websiteurl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/roundcorner"
+        android:drawablePadding="20dp"
+        android:hint="Website"
+        android:inputType="textEmailAddress"
+        android:padding="15dp"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textColorHint="@color/silver"
+        android:textSize="14sp" />
+
+
+
+    <Button
+        android:id="@+id/btn_continue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/roundcorner_button"
+        android:gravity="center"
+        android:padding="15dp"
+        android:text="Continue"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+
+
+
+    </LinearLayout>
